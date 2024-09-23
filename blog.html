@@ -47,9 +47,9 @@
                     </a>
                 </div>
                 <div class="navigation-right">
-                    <a href="https://webflow.com/templates/designers/mejed-alkoutaini" target="_blank" class="nav-link w-inline-block">
+                    <a href="#" target="_blank" class="nav-link w-inline-block">
                         <div class="nav-link-title">
-                        More Templates
+                        More 
                     </div>
                     </a><nav role="navigation" class="nav-menu w-nav-menu">
                         <div data-delay="0" data-hover="false" class="dropdown w-dropdown">
@@ -62,22 +62,22 @@
                             <nav class="navigation-dropdown w-dropdown-list">
                                 <div class="dropdown-pointer">
                                     <div class="dropdown-wrapper">
-                                        <a href="#" class="dropdown-link w-inline-block">
+                                        <a href="home.html" class="dropdown-link w-inline-block">
                                             <div class="dropdown-title">
                                             Home
                                         </div>
                                         </a>
-                                        <a href="/#how-it-works" class="dropdown-link w-inline-block">
+                                        <a href="#how-it-works" class="dropdown-link w-inline-block">
                                             <div class="dropdown-title">
                                                 How it Works
                                             </div>
                                         </a>
-                                        <a href="/#features" class="dropdown-link w-inline-block">
+                                        <a href="#features" class="dropdown-link w-inline-block">
                                             <div class="dropdown-title">
                                                 Features
                                             </div>
                                         </a>
-                                        <a href="/pricing" class="dropdown-link w-inline-block">
+                                        <a href="#pricing" class="dropdown-link w-inline-block">
                                             <div class="dropdown-title">
                                                 Pricing
                                             </div>
@@ -87,7 +87,7 @@
                                                 Blog
                                             </div>
                                         </a>
-                                        <a href="/#faqs" class="dropdown-link w-inline-block">
+                                        <a href="#faqs" class="dropdown-link w-inline-block">
                                             <div class="dropdown-title">
                                                 FAQs
                                             </div>
@@ -126,9 +126,20 @@
                                 <img src="https://cdn.prod.website-files.com/66ddab9773396cad43f6b35d/66e30a927c63cee18902af56_Frame%2071%20(1)-min.png" loading="lazy" alt="" sizes="(max-width: 479px) 100vw, (max-width: 767px) 46vw, (max-width: 991px) 30vw, (max-width: 1439px) 29vw, 386.671875px" srcset="https://cdn.prod.website-files.com/66ddab9773396cad43f6b35d/66e30a927c63cee18902af56_Frame%2071%20(1)-min-p-500.png 500w, https://cdn.prod.website-files.com/66ddab9773396cad43f6b35d/66e30a927c63cee18902af56_Frame%2071%20(1)-min-p-800.png 800w, https://cdn.prod.website-files.com/66ddab9773396cad43f6b35d/66e30a927c63cee18902af56_Frame%2071%20(1)-min-p-1080.png 1080w, https://cdn.prod.website-files.com/66ddab9773396cad43f6b35d/66e30a927c63cee18902af56_Frame%2071%20(1)-min-p-1600.png 1600w, https://cdn.prod.website-files.com/66ddab9773396cad43f6b35d/66e30a927c63cee18902af56_Frame%2071%20(1)-min.png 2400w" class="blog-post-card-image" />
                             </div>
                                 <div class="blog-post-card-details-wrap">
-                                    <p class="md-paragraph">
-                                        September 8, 2024
-                                    </p>
+                                    <p class="md-paragraph" id="date"></p>
+
+<script>
+    // Function to get the current date and format it
+    function showCurrentDate() {
+        var today = new Date();
+        var options = { year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById('date').innerHTML = today.toLocaleDateString('en-US', options);
+    }
+
+    // Call the function when the page loads
+    window.onload = showCurrentDate;
+</script>
+
                                     <h6 class="blog-post-card-title">Starting and Growing a Career in Web Design
                                     </h6>
                                 </div>
