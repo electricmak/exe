@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+--------------------<!DOCTYPE html>
 <html data-wf-domain="najmai.webflow.io" data-wf-page="66e21abee5bb378973276c96" data-wf-site="66d87bb582928970cd067300" data-wf-status="1" lang="en">
 <head>
     <meta charset="utf-8" />
@@ -152,9 +152,20 @@
                                 <img src="https://cdn.prod.website-files.com/66ddab9773396cad43f6b35d/66e30cc7f20330aead4b3844_Frame%2071%20(6)-min.png" loading="lazy" alt="" sizes="(max-width: 479px) 100vw, (max-width: 767px) 46vw, (max-width: 991px) 30vw, (max-width: 1439px) 29vw, 386.671875px" srcset="https://cdn.prod.website-files.com/66ddab9773396cad43f6b35d/66e30cc7f20330aead4b3844_Fram e%2071%20(6)-min-p-500.png 500w, https://cdn.prod.website -files.com/66ddab9773396cad43f6b35d/66e30cc7f20330aead4b3844_Frame%2071%20(6)-min-p-800.png 800w, https://r.prod.website-files.com/66ddab9773396cad43f6b35d/66e30cc7f20330aead4b3844_Frame%2071%20(6)-min-p-1080.png 1080w, https://cdn.prod.website-files.com/66ddab9773396cad43f6b35d/66e30cc7f20330aead4b3844_Frame%2071%20(6)-min-p-1600.png 1600w, https://cdn.prod.website-files.com/66ddab9773396cad43f6b35d/66e30cc7f20330aead4b3844_Frame%2071%20(6)-min.png 2400w" class="blog-post-card-image" />
                             </div>
                                 <div class="blog-post-card-details-wrap">
-                                    <p class="md-paragraph">
-                                        September 8, 2024
-                                    </p>
+                                    <p class="md-paragraph" id="date"></p>
+
+<script>
+    // Function to get the current date and format it
+    function showCurrentDate() {
+        var today = new Date();
+        var options = { year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById('date').innerHTML = today.toLocaleDateString('en-US', options);
+    }
+
+    // Call the function when the page loads
+    window.onload = showCurrentDate;
+</script>
+
                                     <h6 class="blog-post-card-title">Create a Landing Page That Performs Great</h6>
                                 </div>
                             </a>
